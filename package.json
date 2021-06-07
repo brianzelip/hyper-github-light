@@ -1,0 +1,30 @@
+{
+  "name": "hyper-github-light",
+  "version": "0.0.0",
+  "description": "GitHub Light theme for Hyper terminal.",
+  "author": {
+    "name": "Brian Zelip",
+    "url": "https://zelip.me"
+  },
+  "license": "MIT",
+  "homepage": "https://www.npmjs.com/package/hyper-github-light",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brianzelip/hyper-github-light.git"
+  },
+  "bugs": {
+    "url": "https://github.com/brianzelip/hyper-github-light/issues"
+  },
+  "keywords": [
+    "hyper-theme",
+    "Hyper",
+    "terminal",
+    "theme",
+    "light",
+    "GitHub Light"
+  ],
+  "main": "index.js",
+  "dependencies": {
+    "@primer/primitives": "^4.3.10"
+  }
+}

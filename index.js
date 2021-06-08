@@ -9,6 +9,7 @@
 
 const gh = require('@primer/primitives/dist/json/colors/light.json');
 
+// ANSI
 const black = gh.ansi.black;
 const red = gh.ansi.red;
 const green = gh.ansi.green;
@@ -27,15 +28,18 @@ const lightMagenta = gh.ansi.magentaBright;
 const lightCyan = gh.ansi.cyanBright;
 const lightWhite = gh.ansi.whiteBright;
 
+// Hyper
 const cursorColor = blue;
 const foregroundColor = gh.text.primary;
 const backgroundColor = gh.bg.canvas;
 const selectionColor = gh.codemirror.selectionBg;
 const borderColor = gh.border.primary;
 
+// State
 const textSecondaryColor = gh.text.secondary;
 const borderActiveColor = gh.menu.borderActive;
-const bgSecondaryColor = 'rgb(30, 34, 40)'; // Used in VSCode but not found in gh
+const bgSecondaryColor = gh.bg.canvasInset;
+const iconHoverBgColor = gh.scale.gray[3];
 
 exports.decorateConfig = (config) =>
   Object.assign({}, config, {
@@ -48,7 +52,7 @@ exports.decorateConfig = (config) =>
     ${config.css || ''}
 
     .tabs_nav {
-      border-bottom-color: ${borderColor};
+      border-bottom-color: ${borderColor} !important;
     }
 
     .tabs_title {
@@ -83,6 +87,11 @@ exports.decorateConfig = (config) =>
       border-bottom: 1px solid transparent !important;
       color: ${foregroundColor} !important;
       background-color: ${backgroundColor} !important;
+    }
+
+    .tab_icon.tab_iconHovered {
+      color: ${foregroundColor} !important;
+      background-color: ${iconHoverBgColor} !important;
     }
 
     .tabs_borderShim {

@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.1] - 2021-06-10
+
+### Updated
+
+- index.js
+  - Override border when there are no tabs
+  - Update header
+  - Add var section comment
+
 ## [0.1.0] - 2021-06-08
 
 ### Added
@@ -32,5 +41,6 @@ Copied project files from hyper-github-dark-dimmed.
 - .gitignore
 
 [unreleased]: https://github.com/brianzelip/hyper-github-dark-dimmed/compare/v0.1.0...HEAD
+[0.1.1]: https://github.com/brianzelip/hyper-github-dark-dimmed/compare/v0.0.0...v0.1.1
 [0.1.0]: https://github.com/brianzelip/hyper-github-dark-dimmed/compare/v0.0.0...v0.1.0
 [0.0.0]: https://github.com/brianzelip/hyper-github-dark-dimmed/releases/tag/v0.0.0

@@ -2,11 +2,12 @@
  * Map GitHub Light theme, as applied to VS Code, to Hyper.
  *
  * @author Brian Zelip
- * @version v0.1.0
+ * @version v0.1.1
  * @license MIT
  * @see {@link https://github.com/brianzelip/hyper-github-light.git}
  */
 
+// Data
 const gh = require('@primer/primitives/dist/json/colors/light.json');
 
 // ANSI
@@ -52,7 +53,8 @@ exports.decorateConfig = (config) =>
     ${config.css || ''}
 
     .tabs_nav {
-      border-bottom-color: ${borderColor} !important;
+      border: 0;
+      border-bottom: 1px solid ${borderColor} !important;
     }
 
     .tabs_title {
